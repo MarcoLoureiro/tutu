@@ -1,0 +1,75 @@
+{{>partials/headerLogin}}
+
+<div class="containerMainScreen">
+    <div class="retangle">
+    </div>
+
+    <div class="logoMainScreen">
+        <img src="../images/Logo_Tutu.svg"/>
+    </div>
+
+    <div class="description">
+        <p>O <strong>melhor</strong> app de gestão financeira <br/> infantil do mercado!</p>
+    </div>
+
+    <div class="formUser">
+        <form action="/login/get-registred-user" method="POST">
+            <input type="text" name="email" placeholder="Usuário" id="email" minlength="4">
+
+            <input type="password" name="password" placeholder="Senha" id="senha" minlength="4">
+
+            <div>
+                <button type="submit" class="loginButton" id="myBtn">Entrar em minha conta</button>
+            </div>
+        </form>
+    </div>
+
+
+    <button class="registerButton"><a href="/register-user">Criar minha conta</a></button>
+
+    <!--Falta ajeitar isso aqui, esse botão é só pra dar um GET nesses dados e ver 
+    se tem algum usuário com essas credenciais. Caso tenha, encaminhar para a página final,
+    caso não, mostrar algum erro(falta ver oq fazer nessa parte já que n posso usar alert) -->
+    <div class="emailBottomLine"></div>
+    <div class="emailIcon"></div>
+    <div class="emailIcon2"></div>
+
+    <div class="senhaBottomLine"></div>
+    <div class="senhaIcon"></div>
+    <div class="senhaIcon2"></div>
+
+    <div class="retangleBottom"></div>
+</div>
+
+<script>
+   
+
+   async function verificaUsuario (){
+    let senha =  document.querySelector("#senha").value;
+    let login = document.querySelector("#email").value;
+
+     let response = await fetch('http://localhost:3000/users');
+     response = await response.json();
+     let warning=0;
+     response.map((item,index)=>{
+        if(!warning){
+            if(item.email!=login){
+                warning = 0;
+            }
+            if(item.email!=senha){
+                warning = 0;
+            }else {
+                warning = 1;
+            }
+        }
+     });
+     if(!warning){
+        alert("Usuário não encontrado ou senha incorreta");
+     }
+   }
+
+   document.getElementById("myBtn").addEventListener("click", verificaUsuario);
+   
+</script>
+
+{{>partials/footer}}

@@ -1,0 +1,76 @@
+{{>partials/headerLogin}}
+
+<div class="containerMainScreen">
+
+    <div class="topBarRegistrationScreen">
+        <div class="logoRegistrationScreen">
+            <img src="../images/Logo_Tutu_W 1.svg"/>
+        </div>
+        <div class="goBackIconRegistrationScreen">
+            <a href="./login">
+            <img src="../images/Vector.svg" alt="">
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="descriptionRegistrationScreen">
+        <p>
+            Escolha um login e senha
+        </p>
+    </div>
+
+    <div class="formUser">
+        <form action="/register-new-user" method="POST">
+            <input type="text" name="email" placeholder="Usuário" id="email" required minlength="4"/>
+
+            <input type="password" name="password" placeholder="Senha" id="senha" required minlength="4"/>
+
+            <div>
+                <button type="submit" class="loginButton" id="myBtnRegister">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="emailBottomLine"></div>
+    <div class="emailIcon"></div>
+    <div class="emailIcon2"></div>
+
+    <div class="senhaBottomLine"></div>
+    <div class="senhaIcon"></div>
+    <div class="senhaIcon2"></div>
+</div>
+
+<script>
+   
+
+    async function verificaUsuario (){
+     let login =  document.querySelector("#email").value;
+     let senha = document.querySelector("#senha").value;
+     console.log(login);
+ 
+      let response = await fetch('http://localhost:3000/users');
+      response = await response.json();
+      let warning=0;
+      response.map((item,index)=>{
+         if(!warning){
+             if(item.email!=login){
+                 warning = 0;
+             }
+             else {
+                 warning = 1;
+             }
+         }
+      });
+      if(warning){
+         alert("Usuário já cadastrado no sistema");
+      }
+    }
+ 
+    document.getElementById("myBtnRegister").addEventListener("click", verificaUsuario);
+    
+ </script>
+ 
+
+{{>partials/footer}}

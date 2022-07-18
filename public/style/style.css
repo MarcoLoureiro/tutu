@@ -1,0 +1,395 @@
+body{
+    background-color: #E5E5E5;
+}
+
+.containerStartScreen{
+margin: auto;
+position: relative;
+width: 375px;
+height: 712px;
+background: #FED141;
+border-radius: 10px;
+}
+
+.logoStartScreen{
+position: absolute;
+width: 135px;
+height: 26px;
+left: 120px;
+top: 293px;
+}
+
+.buttonStartScreen{
+position: absolute;
+left: 17.07%;
+right: 16.27%;
+top: 72.41%;
+bottom: 22.04%;
+background-color: #E5E5E5;
+border-radius: 2px;
+border: none;
+font-size: 18px;
+color: #FFF;
+font-weight: bold;
+cursor: pointer;
+}
+
+.buttonStartScreen:hover{
+    opacity: 0.9;
+    transform: scale(1.1);
+    transition: all ease .3s;
+}
+
+
+.containerMainScreen{
+margin: auto;
+position: relative;
+width: 375px;
+height: 712px;
+background: #FFF;
+border-radius: 10px;
+}
+
+.retangle{
+position: absolute;
+width: 375px;
+height: 15px;
+left: 0px;
+top: 0px;
+background: #FED141;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+}
+
+.logoMainScreen{
+position: absolute;
+width: 140px;
+height: 27.25px;
+left: 118px;
+top: 95px;
+}
+
+.description{
+
+position: absolute;
+width: 335px;
+height: 54px;
+left: 20px;
+top: 243px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #424D59;
+
+}
+
+.formUser{
+position: absolute;
+width: 292px;
+height: 85px;
+left: 43px;
+top: 417px;
+}
+
+#email{
+    margin-left: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 3px;
+    border: 0;
+}
+
+#email:focus{
+    outline: 0;
+}
+
+#senha{
+    margin-left: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    border: 0;
+    padding: 3px;
+}
+
+#senha:focus{
+    outline: 0;
+}
+
+.emailIcon{
+
+position: absolute;
+left: 14.78%;
+right: 83.41%;
+top: 59.3%;
+bottom: 39.9%;
+
+border: 2px solid #FED141;
+border-radius: 3px;
+}
+
+.emailIcon2{
+
+position: absolute;
+left: 13.87%;
+right: 82.5%;
+top: 60.5%;
+bottom: 38.13%;
+    
+border: 2px solid #FED141;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-bottom: 0;
+}
+
+.emailBottomLine{
+position: absolute;
+width: 292px;
+height: 0px;
+left: 43px;
+top: 447px;
+border: 1px solid #000000;
+background-color: #000000;
+}
+
+
+.senhaIcon{
+    position: absolute;
+    left: 14.68%;
+    right: 83.27%;
+    top: 65.9%;
+    bottom: 32.8%;
+    border: 2px solid #FED141;
+    border-radius: 2px;
+}
+
+.senhaIcon2{
+
+position: absolute;
+left: 13.87%;
+right: 82.45%;
+top: 67%;
+bottom: 31%;
+
+border: 2px solid #FED141;
+border-radius: 3px;
+}
+
+
+.senhaBottomLine{
+position: absolute;
+width: 292px;
+height: 0px;
+left: 43px;
+top: 482px;
+border: 1px solid #000000;
+background-color: #000000;
+}
+
+#senha,.senhaBottomLine{
+    margin-top: 15px;
+}
+
+.retangleBottom{
+position: absolute;
+width: 375px;
+height: 15px;
+left: 0px;
+top: 697px;
+background: #FED141;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+
+.loginButton{
+width: 250px;
+height: 45px;
+border: none;
+position: absolute;
+left: 7.07%;
+right: 16.27%;
+top: 150.41%;
+bottom: 36.04%;
+background: #FED141;
+font-size: 18px;
+color: #FFF;
+font-weight: bold;
+cursor: pointer;
+}
+
+.loginButton:hover{
+opacity: 0.9;
+transform: scale(1.1);
+transition: all ease .3s;
+}
+
+.topBarDashboardInicial{
+position: absolute;
+width: 375px;
+height: 106px;
+left: 0px;
+top: 0px;
+
+background: #FED141;
+box-shadow: 0px 7px 35px rgba(0, 0, 0, 0.2);
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+.topBarDashboardInicialIcons{
+    position: absolute;
+    width: 335px;
+    height: 11.94px;
+    left: 20px;
+    top: 15px;
+}
+
+.topBarDashboardInicialLeftIcon{
+position: absolute;
+width: 21px;
+height: 15px;
+left: 26px;
+top: 60px;
+cursor: pointer;
+}
+
+.topBarDashboardInicialLeftIcon:hover{
+    opacity: 0.5;
+}
+
+.topBarDashboardLogo img{
+position: absolute;
+width: 98px;
+height: 18px;
+left: 139px;
+top: 58px;
+}
+
+.registerButton{
+width: 250px;
+height: 45px;
+border: none;
+position: absolute;
+left: 17.07%;
+right: 16.27%;
+top: 84.61%;
+bottom: 9.85%;
+background: #FED141;
+font-size: 18px;
+color: #FFF;
+font-weight: bold;
+}
+
+.registerButton:hover{
+opacity: 0.9;
+transform: scale(1.1);
+transition: all ease .3s;
+}
+
+.registerButton a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.topBarRegistrationScreen{
+position: absolute;
+width: 375px;
+height: 65px;
+left: 0px;
+top: 0px;
+background-color: #FED141;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+.logoRegistrationScreen{
+position: absolute;
+width: 103px;
+height: 20px;
+left: 252px;
+top: 22px;
+}
+.logoRegistrationScreen img{
+width: 103px;
+height: 20px;
+}
+
+.descriptionRegistrationScreen{
+position: absolute;
+width: 194px;
+height: 90px;
+left: 20px;
+top: 157px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 45px;
+color: #424D59;
+}
+
+
+.infoUserDashboardInicial{
+    display: grid;
+    width: 237px;
+    height: 98px;
+    left: 69px;
+    top: 136px;
+    background-blend-mode: normal;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    position: absolute;
+}
+
+.welcomeText{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height, or 154% */
+letter-spacing: 0.2px;
+
+color: #929DA9;
+height: 20px;
+margin-top: 10%;
+}
+.userWelcomeText{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0.2px;
+color: #FED141;
+height: 32px;
+margin-bottom: 70px;
+}
+
+.userImg{
+    width: 87px;
+    height: auto;
+}
+
+.goBackIconRegistrationScreen{
+position: absolute;
+left: 5.33%;
+right: 90.4%;
+top: 35.96%;
+bottom: 95.07%;
+
+}
+.goBackIconRegistrationScreen:hover{
+    transform: scale(1.1);
+    transition: all ease .3s;
+}

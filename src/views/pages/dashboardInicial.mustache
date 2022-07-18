@@ -1,0 +1,31 @@
+{{>partials/headerLogin}}
+
+<div class="containerMainScreen">
+    <div class="topBarDashboardInicial">
+        <div class="topBarDashboardInicialIcons">
+            <img src="/images/cellphoneIcons.svg"/>
+        </div>
+        <div class="topBarDashboardInicialLeftIcon">
+            <a href="./"><img src="/images/Vector.svg"/></a>
+        </div>
+        <div class="topBarDashboardLogo">
+            <img src="/images/Logo_Tutu_W 1.svg">
+        </div>
+    </div>
+    
+
+    <div class="infoUserDashboardInicial">
+        <div class="userImg"><img src="/images/Ellipse 10.png" alt="user"></div>
+        <div class="welcomeText"> Bem vindo de volta, <br>
+            <div class="userWelcomeText">{{#data}}{{email}}!{{/data}}</div>
+        </div>
+    </div>
+</div>
+
+
+
+{{^data}}
+     :/
+{{/data}}
+
+{{>partials/footer}}

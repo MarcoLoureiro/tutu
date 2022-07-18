@@ -28,4 +28,4 @@ Tela do Usuário
 
 # Para efetuar os testes unitários
 `docker-compose up -d`
-`npx jest`
+`npm run testJest`
